@@ -1,0 +1,565 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #94b9ff;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 10px auto;
+    margin-top: -40px; /* Movendo para cima o cabeçalho inferior */
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ADD8E6;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+
+}
+
+h2.titulo span{
+    color: #ADD8E6;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ADD8E6;
+    transform: scale(1.10);
+}
+
+/* ESTILO DO CABEÇAÇHO */
+
+header{
+    padding: 40px 4% 0;
+    padding-bottom: 20px; 
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOP DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ADD8E6;
+    font-size: 50px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS PARA SABER MAIS */
+
+
+
+.especialidades-box img {
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.especialidades .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.15);
+    
+}
+
+
+
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #ADD8E6;
+    display: block;
+
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ADD8E6;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+
+
+
+/* ESTILO EM DESTAQUE */
+
+section.produto{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.11);
+    
+}
+
+.img-produ{
+    width: 350px;
+    height: 300px;
+    background-color: #ADD8E6;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 0;
+    background-size: cover; /* Garante que a imagem cubra todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem dentro do contêiner */
+}
+section.produto .flex{
+    justify-content: space-around;
+}
+
+section.produto .titulo{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+section.produto .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produto-item {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 50px; /* Espaçamento entre os itens */
+}
+
+.btn-comprar button {
+    margin-top: 20px; /* Espaçamento entre a imagem e o botão */
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ADD8E6;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+/* FORMULARIO */
+
+section.formulario{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.11);
+}
+
+section.formulario h2{
+    padding: 25px;
+    font-size: 50px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 150px;
+    background-color: #ADD8E6;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth 800ms ease-in-out; 
+}
+
+
+/* ESTILO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.507);
+}
+
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+
+.borda{
+    border-top: 2px solid #ADD8E6;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ADD8E6;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+.logo img {
+    max-width: 250px; /* Reduzindo o tamanho máximo da imagem */
+}
+.menu-desktop ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-desktop ul li {
+    margin-right: 20px;
+}
+
+.menu-desktop a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px; /* Adicionando espaçamento interno aos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+.menu-desktop a:hover {
+    background-color: #ADD8E6; /* Mudança de cor ao passar o mouse */
+    color: #fff; /* Mudança de cor do texto ao passar o mouse */
+}
+
+.menu-desktop input[type="text"] {
+    padding: 10px; /* Adicionando espaço interno */
+    border-radius: 20px; /* Borda arredondada */
+    border: 2px solid #ADD8E6; /* Borda sólida */
+    outline: none; /* Removendo contorno ao focar */
+    transition: border-color 0.3s ease; /* Efeito de transição suave na borda */
+}
+
+.menu-desktop input[type="text"]::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+}
+
+.menu-desktop input[type="text"]:focus {
+    border-color: #555; /* Mudando a cor da borda ao focar */
+}
+
+.menu-desktop input[type="text"]:focus {
+    border-color: #555; /* Mudando a cor da borda ao focar */
+}
+.logo-footer img {
+    max-width: 200px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Mantenha a proporção da imagem */
+}
+
+.welcome-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.btn-create-account,
+.btn-login {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #94b9ff; /* Cor de fundo padrão */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-create-account:hover,
+.btn-login:hover {
+    background-color: #87cefa; /* Mudança de cor para azul claro ao passar o mouse */
+}
+
+/* Estilo para a linha separadora */
+.header-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: -30px auto;
+    width: 80%;
+}
+.top-header {
+    background-color: transparent; /* Altere para transparente para remover completamente a cor de fundo */
+    text-align: center;
+    padding: 50px 0;
+
+}
+#imagens {
+    background-color: transparent; /* Cor de fundo opcional */
+    padding: 40px 0; /* Ajuste conforme necessário */
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: left;
+    /* Para alinhar as imagens horizontalmente */
+}
+
+.imagens-container img {
+    max-width: 40%; /* Defina a largura máxima para as imagens */
+    /* Mantenha a proporção da imagem */
+}
+.imagem-meio {
+    width: 100%; /* Defina a largura como automática para a imagem do meio */
+}
+section#imagens {
+    background-color: transparent; /* Remover cor de fundo opcional */
+    padding: 40px 0; /* Ajustar conforme necessário */
+    text-align: center; /* Centralizar as imagens na tela */
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: center; /* Centralizar as imagens horizontalmente */
+    gap: 0px; /* Adicionar espaçamento entre as imagens */
+}
+
+.imagens-container img {
+    max-width: 50%; /* Definir largura máxima para as imagens */
+    height: auto; /* Manter proporção da imagem */
+}
+.card-produto {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.info-produto {
+    padding: 20px;
+}
+
+.info-produto h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-produto .preco {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-comprar button {
+    padding: 10px 20px;
+    background-color: #ADD8E6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona transição suave */
+}
+
+.btn-comprar button:hover {
+    background-color: #87cefa;
+}
+
+
+/* PÁGINA CATEGORIAS.HTML */
+
+
+.categoria {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.categoria:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo do menu de categorias */
+.menu-categorias {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.menu-categorias li {
+    font-size: 20px;
+}
+
+.menu-categorias a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ADD8E6;
+    transition: background-color 0.3s;
+}
+
+.menu-categorias a:hover {
+    background-color: #87cefa;
+}
+
+
+
